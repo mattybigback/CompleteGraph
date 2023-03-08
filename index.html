@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="section controls" id="controls">
+      <h1>Complete Graph Generator</h1>
+      <form id="inputs">
+        <p>Enter number of points:<br>
+          <input id="numPoints" type="number" min="3" max="100" value="9">
+        </p>
+        <p>Line width:<br>
+        <input id="lineWidth" type="number" min="0.1" max="9" value="3"></p>
+      </form>
+      <button id="draw" onclick="parseForm()">Draw</button>
+      <button id="clear" onclick="clearCanvas()">Clear</button>
+    </div>
+    <div class="section content" id="canvasContainer">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="section footer">
+      <p>m-harrison.org</p></div>
+    </div>
+  
+
+  <script src="script.js"></script>
+
+<div style="position: static !important;"></div></body></html>
